@@ -21,17 +21,20 @@ import java.io.File;
 import java.io.IOException;
 
 public class ar_show extends AppCompatActivity {
-    private ModelRenderable renderable;
+    private ModelRenderable renderable;private String choose_dish;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+
+       super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ar_show);
         Toast t=Toast.makeText(getApplicationContext(),getIntent().getStringExtra("title"),Toast.LENGTH_SHORT);
         t.show();
+        choose_dish=getIntent().getStringExtra("title");
         FirebaseApp.initializeApp(this);
-
+        String path = "restaurant/"+choose_dish+"/out.glb";
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference modelRef = storage.getReference().child("restaurant/dish/out.glb");
+        StorageReference modelRef = storage.getReference().child(path);
 
         ArFragment arFragment = (ArFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.arFragment);
