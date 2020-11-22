@@ -2,6 +2,8 @@ package com.example.foodar;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,7 @@ public class ar_show extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
        super.onCreate(savedInstanceState);
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_ar_show);
         Toast t=Toast.makeText(getApplicationContext(),getIntent().getStringExtra("title"),Toast.LENGTH_SHORT);
         t.show();
@@ -91,5 +94,16 @@ public class ar_show extends AppCompatActivity {
 
                 });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+    switch(item.getItemId()){
+        case R.id.home:finish();
+        return true;
+    }
+    return super.onOptionsItemSelected(item);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
