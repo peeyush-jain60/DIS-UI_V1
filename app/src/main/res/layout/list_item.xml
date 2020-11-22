@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/some_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="50mm"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/some_image"
+            android:padding="8dp"
+            android:text="@string/title"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/newTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/some_image"
+            android:padding="8dp"
+            android:text="@string/subheading" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newTitle"
+            android:padding="8dp"
+           android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rating_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/subtitle"
+            android:layout_below="@+id/some_image"
+            android:layout_toEndOf="@+id/newTitle"
+            android:adjustViewBounds="true"
+            android:maxHeight="2mm"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

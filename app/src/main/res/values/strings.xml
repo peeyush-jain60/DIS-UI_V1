@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Food AR</string>
+    <string name="subtitle_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices congue rutrum.
+        Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend eros a enim faucibus mollis. Nunc placerat,
+        est vitae vestibulum blandit, dolor diam fringilla tellus, eu euismod mauris neque at neque.</string>
+    <string name="subheading">Rating</string>
+    <string name="title">Title</string>
+    <string name="news">Here is some News</string>
+    <string-array name="sports_titles">
+        <item>India Accent</item>
+        <item>Tibetan Food Tour of Majnu Ka Tilla</item>
+        <item>Noora Nihari</item>
+        <item>Jung Bahadur Kachori Wala</item>
+        <item>Bade Mian ki Kheer</item>
+        <item>Al Jawahar Restaurant</item>
+        <item>Prem Di Hatti</item>
+        <item>Kuremal Kulfiwale</item>
+        <item>Minar Restaurant</item>
+        <item>Triveni Terrace Cafe</item>
+        <item>Mazaar Restaurant</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>The Manor, 77, Friends Colony, New Delhi</item>
+        <item>Majnu-ka-tilla, New Aruna Nagar,Delhi</item>
+        <item>Barahindu Roa Road, Gali Umrao, Pahari Dhiraj, Sadar Bazaar, New Delhi</item>
+        <item>1104, Gali Bhojpura Rd, Maliwara, Katra Lehswan, Chandni Chowk, New Delhi</item>
+        <item>2867, Bazar Sirkiwalan, Chawri Bazar, Chandni Chowk, New Delhi</item>
+        <item>8, Near, Matia Mahal Rd, Bazar Matia Mahal, Jama Masjid, Chandni Chowk, New Delhi</item>
+        <item>J1/162, Near Rajouri Garden Metro Station, New Delhi</item>
+        <item>1165-66, Sunaron Ki Dharamshala, Bazar Sita Ram, New Delhi</item>
+        <item>L-11, Near Haldiram, Block L, Connaught Place, New Delhi</item>
+        <item>205, Tansen Marg, Opp. FICCI Auditorium, Todermal Road Area, Mandi House, New Delhi</item>
+        <item>shop no i, 78, Block I, Lajpat Nagar,New Delhi</item>
+    </string-array>
+
+    <array name="sports_images">
+        <item>@drawable/indian_accent</item>
+        <item>@drawable/tibet</item>
+        <item>@drawable/noora</item>
+        <item>@drawable/jung</item>
+        <item>@drawable/bade</item>
+        <item>@drawable/al_jaw</item>
+        <item>@drawable/prem</item>
+        <item>@drawable/villa</item>
+        <item>@drawable/minar</item>
+        <item>@drawable/triveni</item>
+        <item>@drawable/mazar</item>
+    </array>
+    <array name="ratings">
+        <item>@drawable/star1</item>
+        <item>@drawable/star2</item>
+        <item>@drawable/star3</item>
+        <item>@drawable/star4</item>
+        <item>@drawable/star5</item>
+        <item>@drawable/star1</item>
+        <item>@drawable/star2</item>
+        <item>@drawable/star3</item>
+        <item>@drawable/star4</item>
+        <item>@drawable/star5</item>
+        <item>@drawable/star1</item>
+    </array>
+</resources>
